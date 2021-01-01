@@ -1,0 +1,28 @@
+div.counter_card{
+    width: 9rem;
+    height: 9rem;
+    background: #d5defd;
+    margin: 1rem;
+    padding: 5px;
+    border-radius: 1rem;
+    display: flex;
+    color: blue;
+    font-size: 3rem;
+    font-weight: 300;
+}
+.counterBoard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+span.counterType {
+    font-size: 1.7rem;
+    font-weight: 600;
+    position: absolute;
+    display: block;
+    padding: 4px 0px 0px 5px;
+}
+span.counterCount{
+    font-family: "Rubik:wght@300";
+    margin: 5rem 3.5rem;
+}
