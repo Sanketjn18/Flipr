@@ -7,13 +7,13 @@ import "./Timeline.css";
 const Timeline = (props) => {
   return (
     <React.Fragment>
-      <Card className="sideLeftTableCard">
+      <Card className="timeline">
         <img src={Destination} alt="FliprBrand" className="FliprTableNav" />
         <div class="vl">
           {props.data &&
             props.data.scan.map((data, i) => (
               <Row className="rowPartsOne" key={i}>
-                <hr className="horizontalLineOne" />
+                <hr className="horizontalLine" />
                 <span className="rowPartsspan">
                   {data.status_detail}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   {data.time.substring(0, 10).split('-').reverse().join('-')}&nbsp;&nbsp;&nbsp;

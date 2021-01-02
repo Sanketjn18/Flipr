@@ -12,8 +12,9 @@ class StateCounter extends Component {
       DEL: 0,
       INT: 0,
       NFI: 0,
-      data:[],
-      filteredData:[]
+      data: [],
+      filteredData: [],
+      class: "DEL",
     };
   }
   componentDidMount() {
@@ -30,7 +31,7 @@ class StateCounter extends Component {
         config
       )
       .then((res) => {
-        this.setState({data:res.data},()=>this.handleFilter("DEL"))
+        this.setState({ data: res.data }, () => this.handleFilter("DEL"));
         for (let i = 0; i < res.data.length; i++) {
           switch (res.data[i].current_status_code) {
             case "OOD":
@@ -74,7 +75,6 @@ class StateCounter extends Component {
               });
               break;
             default:
-              console.log("gh", i);
               break;
           }
         }
@@ -84,38 +84,76 @@ class StateCounter extends Component {
     let tempData = [];
     tempData = this.state.data.filter((x) => {
       return x.current_status_code == param;
-    })
-    // console.log(tempData);
-    this.setState({filteredData:tempData})
-  }
+    });
+    this.setState({ filteredData: tempData });
+  };
   render() {
-    // console.log(this.state);
     const { OOD, DEL, INT, DEX, NFI } = this.state;
     return (
       <React.Fragment>
-      <div className="counterBoard">
-        <div className="counter_card" onClick={() => this.handleFilter("DEL")}>
-          <span className="counterType">DEL</span>
-          <span className="counterCount">{DEL}</span>
+        <div className="counterBoard">
+          <div
+            className={
+              this.state.class === "DEL" ? "counter_card selected" : "counter_card"
+            }
+            onClick={() => {
+              this.handleFilter("DEL");
+              this.setState({ class: "DEL" });
+            }}
+          >
+            <span className="counterType">DEL</span>
+            <span className="counterCount">{DEL}</span>
+          </div>
+          <div
+            className={
+              this.state.class === "INT" ? "counter_card selected" : "counter_card"
+            }
+            onClick={() => {
+              this.handleFilter("INT");
+              this.setState({ class: "INT" });
+            }}
+          >
+            <span className="counterType">INT</span>
+            <span className="counterCount">{INT}</span>
+          </div>
+          <div
+               className={
+                this.state.class === "OOD" ? "counter_card selected" : "counter_card"
+              }
+              onClick={() => {
+                this.handleFilter("OOD");
+                this.setState({ class: "OOD" });
+              }}
+          >
+            <span className="counterType">OOD</span>
+            <span className="counterCount">{OOD ? OOD : 0}</span>
+          </div>
+          <div
+            className={
+              this.state.class === "DEX" ? "counter_card selected" : "counter_card"
+            }
+            onClick={() => {
+              this.handleFilter("DEX");
+              this.setState({ class: "DEX" });
+            }}
+          >
+            <span className="counterType">DEX</span>
+            <span className="counterCount">{DEX}</span>
+          </div>
+          <div
+              className={
+                this.state.class === "NFI" ? "counter_card selected" : "counter_card"
+              }
+              onClick={() => {
+                this.handleFilter("NFI");
+                this.setState({ class: "NFI" });
+              }}
+          >
+            <span className="counterType">NFI</span>
+            <span className="counterCount">{NFI}</span>
+          </div>
         </div>
-        <div className="counter_card" onClick={() => this.handleFilter("INT")}>
-          <span className="counterType">INT</span>
-          <span className="counterCount">{INT}</span>
-        </div>
-        <div className="counter_card" onClick={() => this.handleFilter("OOD")}>
-          <span className="counterType">OOD</span>
-          <span className="counterCount">{OOD ? OOD : 0}</span>
-        </div>
-        <div className="counter_card" onClick={() => this.handleFilter("DEX")}>
-          <span className="counterType">DEX</span>
-          <span className="counterCount">{DEX}</span>
-        </div>
-        <div className="counter_card" onClick={() => this.handleFilter("NFI")}>
-          <span className="counterType">NFI</span>
-          <span className="counterCount">{NFI}</span>
-        </div>
-      </div>
-      <DataTable data={this.state.filteredData}/>
+        <DataTable data={this.state.filteredData} />
       </React.Fragment>
     );
   }
