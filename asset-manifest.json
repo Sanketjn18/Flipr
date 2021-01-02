@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Flipr/static/css/main.ddec1ffc.chunk.css",
+    "main.js": "/Flipr/static/js/main.bfa48a5a.chunk.js",
+    "main.js.map": "/Flipr/static/js/main.bfa48a5a.chunk.js.map",
+    "runtime-main.js": "/Flipr/static/js/runtime-main.08602d68.js",
+    "runtime-main.js.map": "/Flipr/static/js/runtime-main.08602d68.js.map",
+    "static/js/2.118e4909.chunk.js": "/Flipr/static/js/2.118e4909.chunk.js",
+    "static/js/2.118e4909.chunk.js.map": "/Flipr/static/js/2.118e4909.chunk.js.map",
+    "static/js/3.5b50400e.chunk.js": "/Flipr/static/js/3.5b50400e.chunk.js",
+    "static/js/3.5b50400e.chunk.js.map": "/Flipr/static/js/3.5b50400e.chunk.js.map",
+    "index.html": "/Flipr/index.html",
+    "static/css/main.ddec1ffc.chunk.css.map": "/Flipr/static/css/main.ddec1ffc.chunk.css.map",
+    "static/js/2.118e4909.chunk.js.LICENSE.txt": "/Flipr/static/js/2.118e4909.chunk.js.LICENSE.txt",
+    "static/media/destination.5336278d.svg": "/Flipr/static/media/destination.5336278d.svg",
+    "static/media/logo.60097ea2.svg": "/Flipr/static/media/logo.60097ea2.svg",
+    "static/media/profile.2fbd2bc9.svg": "/Flipr/static/media/profile.2fbd2bc9.svg",
+    "static/media/warehouse.147c9c0b.svg": "/Flipr/static/media/warehouse.147c9c0b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08602d68.js",
+    "static/js/2.118e4909.chunk.js",
+    "static/css/main.ddec1ffc.chunk.css",
+    "static/js/main.bfa48a5a.chunk.js"
+  ]
+}
