@@ -52,8 +52,8 @@
   }
   span.rowPartsspan {
     background-color: white;
-    width: 37rem;
-    height: 4rem;
+    width: 42rem;
+    height: 5rem;
     margin-top: -1.5rem;
     margin-left: 1rem;
     padding: 1rem;
@@ -66,4 +66,9 @@
   }
   hr {
       margin-top: 5px !important;
+  }
+  @media (max-width:1440px){
+    span.rowPartsspan{
+      width: 37rem;
+    }
   }
