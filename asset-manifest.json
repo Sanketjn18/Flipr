@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Flipr/static/css/main.ddec1ffc.chunk.css",
-    "main.js": "/Flipr/static/js/main.bfa48a5a.chunk.js",
-    "main.js.map": "/Flipr/static/js/main.bfa48a5a.chunk.js.map",
+    "main.js": "/Flipr/static/js/main.0b3502db.chunk.js",
+    "main.js.map": "/Flipr/static/js/main.0b3502db.chunk.js.map",
     "runtime-main.js": "/Flipr/static/js/runtime-main.08602d68.js",
     "runtime-main.js.map": "/Flipr/static/js/runtime-main.08602d68.js.map",
     "static/js/2.118e4909.chunk.js": "/Flipr/static/js/2.118e4909.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.08602d68.js",
     "static/js/2.118e4909.chunk.js",
     "static/css/main.ddec1ffc.chunk.css",
-    "static/js/main.bfa48a5a.chunk.js"
+    "static/js/main.0b3502db.chunk.js"
   ]
 }
