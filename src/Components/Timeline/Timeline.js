@@ -8,21 +8,21 @@ const Timeline = (props) => {
   return (
     <React.Fragment>
       <Card className="timeline">
-        <img src={Destination} alt="FliprBrand" className="FliprTableNav" />
+        <img src={Destination} alt="Destination" className="FliprTableNav" />
         <div class="vl">
           {props.data &&
             props.data.scan.map((data, i) => (
               <Row className="rowPartsOne" key={i}>
                 <hr className="horizontalLine" />
                 <span className="rowPartsspan">
-                  {data.status_detail}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  {data.location}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   {data.time.substring(0, 10).split('-').reverse().join('-')}&nbsp;&nbsp;&nbsp;
                   {data.time.substring(11)}
                 </span>
               </Row>
             ))}
         </div>
-        <img src={Warehouse} alt="FliprBrand" className="FliprTableNav" />
+        <img src={Warehouse} alt="Warehouse" className="FliprTableNav" />
       </Card>
     </React.Fragment>
   );
