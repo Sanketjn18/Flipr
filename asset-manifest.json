@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Flipr/static/css/main.ddec1ffc.chunk.css",
+    "main.css": "/Flipr/static/css/main.169e2725.chunk.css",
     "main.js": "/Flipr/static/js/main.0b3502db.chunk.js",
     "main.js.map": "/Flipr/static/js/main.0b3502db.chunk.js.map",
     "runtime-main.js": "/Flipr/static/js/runtime-main.08602d68.js",
@@ -10,7 +10,7 @@
     "static/js/3.5b50400e.chunk.js": "/Flipr/static/js/3.5b50400e.chunk.js",
     "static/js/3.5b50400e.chunk.js.map": "/Flipr/static/js/3.5b50400e.chunk.js.map",
     "index.html": "/Flipr/index.html",
-    "static/css/main.ddec1ffc.chunk.css.map": "/Flipr/static/css/main.ddec1ffc.chunk.css.map",
+    "static/css/main.169e2725.chunk.css.map": "/Flipr/static/css/main.169e2725.chunk.css.map",
     "static/js/2.118e4909.chunk.js.LICENSE.txt": "/Flipr/static/js/2.118e4909.chunk.js.LICENSE.txt",
     "static/media/destination.5336278d.svg": "/Flipr/static/media/destination.5336278d.svg",
     "static/media/logo.60097ea2.svg": "/Flipr/static/media/logo.60097ea2.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.08602d68.js",
     "static/js/2.118e4909.chunk.js",
-    "static/css/main.ddec1ffc.chunk.css",
+    "static/css/main.169e2725.chunk.css",
     "static/js/main.0b3502db.chunk.js"
   ]
 }
